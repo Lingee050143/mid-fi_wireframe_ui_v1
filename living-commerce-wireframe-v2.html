@@ -114,6 +114,7 @@
 
   .bottom-nav {
     display:flex;
+    margin-top:auto;
     border-top:1px solid #e0e0e0;
     background:#fff;
   }
@@ -506,8 +507,7 @@
   <a href="#s2c">Screen 2C — 탐색 단품 탭 (AI 무드별 묶음)</a>
   <a href="#s2b">Screen 2B-큐 — 큐레이션 콘텐츠 상세 + 큐레이션 세트 바텀시트</a>
   <a href="#s2b-uc">Screen 2B-유 — 유저 콘텐츠 상세 + 이 방에 쓰인 상품 바텀시트</a>
-  <a href="#s3">Screen 3 — 상품 상세</a>
-  <a href="#s3b">Screen 3B — 상품 상세 고도화 시안</a>
+  <a href="#s3">Screen 3 — 상품 상세 고도화 시안</a>
   <a href="#deprecated">구버전 UI 아카이브</a>
   <a href="#s6">Screen 6 — 저장 탭 (무드보드·단품·큐레이션·유저콘텐츠)</a>
   <a href="#s7">Screen 7 — 마이페이지</a>
@@ -525,7 +525,7 @@
     <!-- 미선택 상태 -->
     <div>
       <p class="frame-label">Step 1/6 — 무드 미선택 (다음 비활성)</p>
-      <div class="mobile-frame">
+      <div class="mobile-frame" style="display:flex;flex-direction:column;min-height:844px;">
         <!-- 헤더 -->
         <div style="display:flex;align-items:center;justify-content:space-between;padding:12px 16px 0;">
           <div style="font-size:18px;color:#555;">←</div>
@@ -586,7 +586,7 @@
         </div>
         <div class="annotation" style="padding:4px 16px 4px;">※ 3개 이상 선택 시 [다음] 활성화</div>
         <div class="divider"></div>
-        <div style="padding:12px 16px;display:flex;flex-direction:column;gap:8px;">
+        <div style="margin-top:auto;padding:12px 16px;display:flex;flex-direction:column;gap:8px;">
           <button class="btn btn-full btn-disabled" disabled>다음</button>
           <button class="btn btn-full" style="color:#999;border-color:#ddd;font-size:12px;">건너뛰기</button>
         </div>
@@ -596,7 +596,7 @@
     <!-- 3개 선택 상태 -->
     <div>
       <p class="frame-label">Step 1/6 — 무드 3개 선택 (다음 활성)</p>
-      <div class="mobile-frame">
+      <div class="mobile-frame" style="display:flex;flex-direction:column;min-height:844px;">
         <div style="display:flex;align-items:center;justify-content:space-between;padding:12px 16px 0;">
           <div style="font-size:18px;color:#555;">←</div>
           <div style="font-size:12px;color:#aaa;text-decoration:underline;">건너뛰기</div>
@@ -661,7 +661,7 @@
         </div>
         <div class="annotation" style="padding:4px 16px 4px;">※ 선택: 핑크 테두리 + 우상단 핑크 체크 / 미선택: opacity 낮춤</div>
         <div class="divider"></div>
-        <div style="padding:12px 16px;display:flex;flex-direction:column;gap:8px;">
+        <div style="margin-top:auto;padding:12px 16px;display:flex;flex-direction:column;gap:8px;">
           <button class="btn btn-primary btn-full">다음</button>
           <button class="btn btn-full" style="color:#999;border-color:#ddd;font-size:12px;">건너뛰기</button>
         </div>
@@ -682,7 +682,7 @@
     <!-- 미선택 상태 -->
     <div>
       <p class="frame-label">Step 2/6 — 주거 구조 (미선택)</p>
-      <div class="mobile-frame">
+      <div class="mobile-frame" style="display:flex;flex-direction:column;min-height:844px;">
         <div style="display:flex;align-items:center;justify-content:space-between;padding:12px 16px 0;">
           <div style="font-size:18px;color:#555;">←</div>
           <div style="font-size:12px;color:#aaa;text-decoration:underline;">건너뛰기</div>
@@ -746,7 +746,7 @@
           </div>
         </div>
         <div class="divider" style="margin-top:12px;"></div>
-        <div style="padding:12px 16px;display:flex;flex-direction:column;gap:8px;">
+        <div style="margin-top:auto;padding:12px 16px;display:flex;flex-direction:column;gap:8px;">
           <button class="btn btn-full btn-disabled" disabled>다음</button>
           <button class="btn btn-full" style="color:#999;border-color:#ddd;font-size:12px;">건너뛰기</button>
         </div>
@@ -756,7 +756,7 @@
     <!-- 원룸 선택 + 평수 드롭다운 열림 상태 -->
     <div>
       <p class="frame-label">Step 2/6 — 원룸 선택 + 평수 드롭다운</p>
-      <div class="mobile-frame">
+      <div class="mobile-frame" style="display:flex;flex-direction:column;min-height:844px;">
         <div style="display:flex;align-items:center;justify-content:space-between;padding:12px 16px 0;">
           <div style="font-size:18px;color:#555;">←</div>
           <div style="font-size:12px;color:#aaa;text-decoration:underline;">건너뛰기</div>
@@ -865,7 +865,7 @@
 
         </div>
         <div class="divider" style="margin-top:12px;"></div>
-        <div style="padding:12px 16px 8px;">
+        <div style="margin-top:auto;padding:12px 16px 8px;">
           <button class="btn btn-primary btn-full" style="display:flex;align-items:center;justify-content:center;gap:8px;font-size:15px;">
             다음 <span style="font-size:16px;line-height:1;">→</span>
           </button>
@@ -888,7 +888,7 @@
     <!-- ── FRAME 1: 원룸 — 기본 상태 (토글 미선택) ── -->
     <div>
       <p class="frame-label">Step 3/6 — 원룸 공간 상세 (기본)</p>
-      <div class="mobile-frame">
+      <div class="mobile-frame" style="display:flex;flex-direction:column;min-height:844px;">
         <div style="display:flex;align-items:center;justify-content:space-between;padding:12px 16px 0;">
           <div style="font-size:18px;color:#555;">←</div>
           <div style="font-size:12px;color:#aaa;text-decoration:underline;">건너뛰기</div>
@@ -970,7 +970,7 @@
 
         <div class="annotation" style="padding:4px 16px 4px;">※ 거실+침실 통합은 고정 / 나머지 토글로 추가 선택</div>
         <div class="divider" style="margin-top:8px;"></div>
-        <div style="padding:12px 16px 8px;">
+        <div style="margin-top:auto;padding:12px 16px 8px;">
           <button class="btn btn-primary btn-full" style="display:flex;align-items:center;justify-content:center;gap:8px;font-size:15px;">
             다음 <span style="font-size:16px;">→</span>
           </button>
@@ -982,7 +982,7 @@
     <!-- ── FRAME 2: 원룸 — 주방+화장실 ON 상태 ── -->
     <div>
       <p class="frame-label">Step 3/6 — 원룸 주방·화장실 선택됨</p>
-      <div class="mobile-frame">
+      <div class="mobile-frame" style="display:flex;flex-direction:column;min-height:844px;">
         <div style="display:flex;align-items:center;justify-content:space-between;padding:12px 16px 0;">
           <div style="font-size:18px;color:#555;">←</div>
           <div style="font-size:12px;color:#aaa;text-decoration:underline;">건너뛰기</div>
@@ -1063,7 +1063,7 @@
         </div>
 
         <div class="divider" style="margin-top:8px;"></div>
-        <div style="padding:12px 16px 8px;">
+        <div style="margin-top:auto;padding:12px 16px 8px;">
           <button class="btn btn-primary btn-full" style="display:flex;align-items:center;justify-content:center;gap:8px;font-size:15px;">
             다음 <span style="font-size:16px;">→</span>
           </button>
@@ -1086,7 +1086,7 @@
     <!-- 기본 상태 -->
     <div>
       <p class="frame-label">Step 4/6 — 베이스 컬러 (일부 입력)</p>
-      <div class="mobile-frame">
+      <div class="mobile-frame" style="display:flex;flex-direction:column;min-height:844px;">
         <div style="display:flex;align-items:center;justify-content:space-between;padding:12px 16px 0;">
           <div style="font-size:18px;color:#555;">←</div>
           <div style="font-size:12px;color:#aaa;text-decoration:underline;">건너뛰기</div>
@@ -1136,7 +1136,7 @@
         </div>
         <div class="annotation" style="padding:8px 16px 4px;">[변경] 탭 시 → 바텀 시트 색상환 노출</div>
         <div class="divider" style="margin-top:8px;"></div>
-        <div style="padding:12px 16px;display:flex;flex-direction:column;gap:8px;">
+        <div style="margin-top:auto;padding:12px 16px;display:flex;flex-direction:column;gap:8px;">
           <button class="btn btn-primary btn-full">다음</button>
           <button class="btn btn-full" style="color:#999;border-color:#ddd;font-size:12px;">건너뛰기</button>
         </div>
@@ -1192,7 +1192,7 @@
     <!-- 일부 입력 상태 -->
     <div>
       <p class="frame-label">Step 5/6 — 가구 일부 선택 + 색상 입력</p>
-      <div class="mobile-frame">
+      <div class="mobile-frame" style="display:flex;flex-direction:column;min-height:844px;">
         <div style="display:flex;align-items:center;justify-content:space-between;padding:12px 16px 0;">
           <div style="font-size:18px;color:#555;">←</div>
           <div style="font-size:12px;color:#aaa;text-decoration:underline;">건너뛰기</div>
@@ -1251,7 +1251,7 @@
           <div class="annotation">→ 탭 시 가구 종류 선택 바텀 시트 열림</div>
         </div>
         <div class="divider" style="margin-top:8px;"></div>
-        <div style="padding:12px 16px;display:flex;flex-direction:column;gap:8px;">
+        <div style="margin-top:auto;padding:12px 16px;display:flex;flex-direction:column;gap:8px;">
           <button class="btn btn-primary btn-full">다음</button>
           <button class="btn btn-full" style="color:#999;border-color:#ddd;font-size:12px;">건너뛰기</button>
         </div>
@@ -1296,7 +1296,7 @@
 
     <div>
       <p class="frame-label">Step 6/6 — AI 무드 카드 완성</p>
-      <div class="mobile-frame">
+      <div class="mobile-frame" style="display:flex;flex-direction:column;min-height:844px;">
         <div style="display:flex;align-items:center;justify-content:space-between;padding:12px 16px 0;">
           <div style="font-size:18px;color:#555;">←</div>
           <div style="font-size:12px;color:transparent;">건너뛰기</div>
@@ -1347,7 +1347,7 @@
         </div>
         <div class="annotation" style="padding:8px 16px 4px;">※ AI 분석 결과 이미지 + 키워드 + 메인/서브/포인트 3종 팔레트<br>※ 이 카드는 마이페이지에서 언제든 재확인 가능</div>
         <div class="divider" style="margin-top:8px;"></div>
-        <div style="padding:12px 16px;display:flex;flex-direction:column;gap:8px;">
+        <div style="margin-top:auto;padding:12px 16px;display:flex;flex-direction:column;gap:8px;">
           <button class="btn btn-primary btn-full">시작하기</button>
           <button class="btn btn-full" style="color:#999;border-color:#ddd;font-size:12px;">다시 검사하기</button>
         </div>
@@ -1357,7 +1357,7 @@
     <!-- 무드 카드 상세 설명 -->
     <div>
       <p class="frame-label">Step 6/6 — 설계 주석</p>
-      <div class="mobile-frame" style="padding:16px;">
+      <div class="mobile-frame" style="padding:16px;display:flex;flex-direction:column;min-height:844px;">
         <div style="font-size:13px;font-weight:700;margin-bottom:12px;">Step 6 설계 주석</div>
         <div style="display:flex;flex-direction:column;gap:8px;font-size:11px;color:#555;line-height:1.6;">
           <div><strong>프로그레스:</strong> 6개 모두 채워짐 (●●●●●●)<br>건너뛰기 버튼 미노출 (마지막 단계)</div>
@@ -1383,7 +1383,7 @@
     <!-- 메인 프레임 -->
     <div>
       <p class="frame-label">홈 탭 (공간 정보 미입력 상태)</p>
-      <div class="mobile-frame">
+      <div class="mobile-frame" style="display:flex;flex-direction:column;min-height:844px;">
 
         <!-- 헤더 -->
         <div class="header">
@@ -1521,7 +1521,7 @@
     <!-- ── FRAME 1: 큐레이션 탭 기본 상태 ── -->
     <div>
       <p class="frame-label">탐색 — 큐레이션 탭 (기본 피드)</p>
-      <div class="mobile-frame">
+      <div class="mobile-frame" style="display:flex;flex-direction:column;min-height:844px;">
 
         <!-- [1] 상단 헤더: 검색바 + 알림 + 장바구니 -->
         <div style="display:flex;align-items:center;gap:8px;padding:12px 16px 8px;border-bottom:1px solid #efefef;background:#fff;">
@@ -1567,14 +1567,43 @@
           </div>
         </div>
 
-        <!-- [3] 공간별 소분류 탭 -->
-        <div style="display:flex;gap:0;border-bottom:1px solid #e8e8e8;overflow-x:auto;">
-          <div style="padding:8px 16px;font-size:12px;font-weight:700;color:#111;border-bottom:2px solid #111;white-space:nowrap;flex-shrink:0;">전체</div>
-          <div style="padding:8px 16px;font-size:12px;color:#999;white-space:nowrap;flex-shrink:0;">거실</div>
-          <div style="padding:8px 16px;font-size:12px;color:#999;white-space:nowrap;flex-shrink:0;">침실</div>
-          <div style="padding:8px 16px;font-size:12px;color:#999;white-space:nowrap;flex-shrink:0;">주방</div>
-          <div style="padding:8px 16px;font-size:12px;color:#999;white-space:nowrap;flex-shrink:0;">소품</div>
-          <div style="padding:8px 16px;font-size:12px;color:#999;white-space:nowrap;flex-shrink:0;">사무용품</div>
+        <!-- [3] 공간별 필터 칩 (아이콘+텍스트, 가로 스크롤, 5개 노출) -->
+        <div style="display:flex;gap:0;overflow-x:auto;padding:12px 16px;border-bottom:1px solid #f0f0f0;-webkit-overflow-scrolling:touch;scrollbar-width:none;">
+          <!-- 전체: 선택됨 -->
+          <div style="display:flex;flex-direction:column;align-items:center;gap:4px;min-width:64px;cursor:pointer;flex-shrink:0;">
+            <div style="width:44px;height:44px;border-radius:12px;background:#111;display:flex;align-items:center;justify-content:center;font-size:20px;">🏠</div>
+            <span style="font-size:10px;font-weight:700;color:#111;white-space:nowrap;">전체</span>
+          </div>
+          <!-- 수면 -->
+          <div style="display:flex;flex-direction:column;align-items:center;gap:4px;min-width:64px;cursor:pointer;flex-shrink:0;">
+            <div style="width:44px;height:44px;border-radius:12px;background:#f4f4f4;display:flex;align-items:center;justify-content:center;font-size:20px;">🛏️</div>
+            <span style="font-size:10px;color:#888;white-space:nowrap;">수면</span>
+          </div>
+          <!-- 워크/서재 -->
+          <div style="display:flex;flex-direction:column;align-items:center;gap:4px;min-width:64px;cursor:pointer;flex-shrink:0;">
+            <div style="width:44px;height:44px;border-radius:12px;background:#f4f4f4;display:flex;align-items:center;justify-content:center;font-size:20px;">🖥️</div>
+            <span style="font-size:10px;color:#888;white-space:nowrap;">워크/서재</span>
+          </div>
+          <!-- 다이닝/키친 -->
+          <div style="display:flex;flex-direction:column;align-items:center;gap:4px;min-width:64px;cursor:pointer;flex-shrink:0;">
+            <div style="width:44px;height:44px;border-radius:12px;background:#f4f4f4;display:flex;align-items:center;justify-content:center;font-size:20px;">🍽️</div>
+            <span style="font-size:10px;color:#888;white-space:nowrap;">다이닝/키친</span>
+          </div>
+          <!-- 드레스룸/수납 -->
+          <div style="display:flex;flex-direction:column;align-items:center;gap:4px;min-width:64px;cursor:pointer;flex-shrink:0;">
+            <div style="width:44px;height:44px;border-radius:12px;background:#f4f4f4;display:flex;align-items:center;justify-content:center;font-size:20px;">🗂️</div>
+            <span style="font-size:10px;color:#888;white-space:nowrap;">드레스룸</span>
+          </div>
+          <!-- 취미 -->
+          <div style="display:flex;flex-direction:column;align-items:center;gap:4px;min-width:64px;cursor:pointer;flex-shrink:0;">
+            <div style="width:44px;height:44px;border-radius:12px;background:#f4f4f4;display:flex;align-items:center;justify-content:center;font-size:20px;">🎬</div>
+            <span style="font-size:10px;color:#888;white-space:nowrap;">취미</span>
+          </div>
+          <!-- 펫 -->
+          <div style="display:flex;flex-direction:column;align-items:center;gap:4px;min-width:64px;cursor:pointer;flex-shrink:0;">
+            <div style="width:44px;height:44px;border-radius:12px;background:#f4f4f4;display:flex;align-items:center;justify-content:center;font-size:20px;">🐾</div>
+            <span style="font-size:10px;color:#888;white-space:nowrap;">펫</span>
+          </div>
         </div>
 
         <!-- [4] 정렬/필터 칩 (가로 스크롤) -->
@@ -1691,7 +1720,7 @@
     <!-- ── FRAME 2: 필터 사이드 드로어 (열림) ── -->
     <div>
       <p class="frame-label">탐색 — 필터 사이드 드로어 (열림)</p>
-      <div class="mobile-frame" style="position:relative;overflow:hidden;">
+      <div class="mobile-frame" style="position:relative;overflow:hidden;min-height:844px;">
 
         <!-- 뒷배경: 피드 흐릿하게 -->
         <div style="opacity:0.38;pointer-events:none;">
@@ -1873,7 +1902,7 @@
     <!-- ══ 시안 A: 소분류 탭 없음 ══ -->
     <div>
       <p class="frame-label">시안 A — 정렬 칩만 (소분류 탭 없음)</p>
-      <div class="mobile-frame">
+      <div class="mobile-frame" style="display:flex;flex-direction:column;min-height:844px;">
 
         <!-- 헤더 -->
         <div style="display:flex;align-items:center;gap:8px;padding:12px 16px 8px;border-bottom:1px solid #efefef;">
@@ -2104,7 +2133,7 @@
     <!-- 시안 B 삭제됨: 소분류 탭(전체·거실·침실·주방·소품·사무용품)은 Screen 2 큐레이션 탭에 통합 -->
     <div style="display:none;">
       <p class="frame-label">시안 B — 공간별 소분류 탭 포함 (거실·침실·주방·소품…)</p>
-      <div class="mobile-frame">
+      <div class="mobile-frame" style="display:flex;flex-direction:column;min-height:844px;">
 
         <!-- 헤더 -->
         <div style="display:flex;align-items:center;gap:8px;padding:12px 16px 8px;border-bottom:1px solid #efefef;">
@@ -3053,149 +3082,12 @@
 <!-- ════════════════════════════════════════════
      SCREEN 3 — 상품 상세페이지
 ═════════════════════════════════════════════ -->
-<section class="screen-section" id="s3">
-  <h2 class="screen-section-title">Screen 3 — 상품 상세페이지</h2>
-  <div class="frames-row">
-
-    <!-- 메인 프레임 -->
-    <div>
-      <p class="frame-label">상품 상세 (뎁스 1 — 추천 진입 전)</p>
-      <div class="mobile-frame">
-
-        <!-- 헤더 -->
-        <div class="header">
-          <span class="header-back">← 뒤로가기</span>
-          <span style="font-size:13px;font-weight:600;">원목 2인 소파</span>
-          <div class="header-icon">⋯</div>
-        </div>
-
-        <!-- 이미지 영역 -->
-        <div class="img-box" style="width:100%;height:220px;border-radius:0;">이미지</div>
-        <div style="display:flex;justify-content:center;gap:4px;padding:8px 0;">
-          <span style="font-size:18px;color:#bbb;">○</span>
-          <span style="font-size:18px;color:#bbb;">○</span>
-          <span style="font-size:18px;color:#555;">●</span>
-          <span style="font-size:18px;color:#bbb;">○</span>
-        </div>
-
-        <!-- 상품 정보 -->
-        <div style="padding:8px 16px 12px;border-bottom:1px solid #f0f0f0;">
-          <div style="font-size:16px;font-weight:700;margin-bottom:4px;">원목 2인 소파</div>
-          <div style="font-size:18px;font-weight:700;">320,000원</div>
-        </div>
-
-        <!-- 내 공간 어울림 카드 -->
-        <div class="fit-card">
-          <div style="font-size:12px;font-weight:700;margin-bottom:8px;">내 공간과 어울림</div>
-          <div style="display:flex;align-items:center;gap:8px;margin-bottom:8px;">
-            <div style="font-size:11px;color:#777;width:60px;">내 공간</div>
-            <span class="color-chip chip-1"></span>
-            <span class="color-chip chip-2"></span>
-            <span class="color-chip chip-3"></span>
-          </div>
-          <div style="display:flex;align-items:center;gap:8px;margin-bottom:8px;">
-            <div style="font-size:11px;color:#777;width:60px;">이 제품</div>
-            <span class="color-chip chip-2"></span>
-            <span class="color-chip chip-3"></span>
-          </div>
-          <div style="font-size:11px;color:#666;margin-bottom:4px;">어울림 84%</div>
-          <div class="gauge-bar"><div class="gauge-fill" style="width:84%;"></div></div>
-          <div style="font-size:11px;color:#888;margin-top:8px;">따뜻한 우드 톤이 벽지 색상과 잘 어울려요.</div>
-          <div class="annotation">※ 공간 미입력 시 카드 전체 미노출</div>
-        </div>
-
-        <!-- 색상/사이즈 -->
-        <div style="padding:8px 16px;border-bottom:1px solid #f0f0f0;">
-          <div style="font-size:12px;font-weight:600;margin-bottom:8px;">색상 / 사이즈</div>
-          <div style="display:flex;align-items:center;gap:8px;margin-bottom:8px;">
-            <span style="font-size:11px;color:#777;">색상</span>
-            <select style="font-size:11px;padding:4px 8px;border:1px solid #ccc;border-radius:4px;background:#fff;color:#333;">
-              <option>내추럴 우드</option>
-            </select>
-          </div>
-          <div style="font-size:11px;color:#666;margin-bottom:8px;">W 1400 × D 800 × H 750 mm</div>
-          <span style="font-size:11px;color:#888;text-decoration:underline;cursor:pointer;">📏 사이즈 재는 법 보기 →</span>
-        </div>
-
-        <!-- 추천 이유 -->
-        <div style="padding:12px 16px;border-bottom:1px solid #f0f0f0;">
-          <div style="font-size:12px;font-weight:600;margin-bottom:8px;">이 조합을 추천하는 이유</div>
-          <div style="font-size:12px;color:#666;line-height:1.6;">베이지 벽지와 원목 프레임이 따뜻한 자연감을 만들어냅니다. 패브릭 소재로 계절감 있는 연출이 가능해요.</div>
-        </div>
-
-        <!-- CTA -->
-        <div style="display:flex;gap:8px;padding:12px 16px;">
-          <button class="btn" style="flex:1;">🤍 찜하기</button>
-          <button class="btn btn-primary" style="flex:2;">장바구니 담기</button>
-        </div>
-
-        <!-- 맞춤 추천 진입점 -->
-        <div style="padding:0 16px 16px;">
-          <div style="font-size:12px;font-weight:600;margin-bottom:8px;">이 상품과 어울리는 추천</div>
-          <button class="btn btn-full">추천 상품 보기 ↓</button>
-          <div class="annotation">※ 탭 시 바텀 시트로 열림 — 풀페이지 이동 없음<br>※ 래빗홀 방지: 추천 뎁스 1단계 제한<br>※ 뎁스 2 진입 시 상단 고정 버튼 노출: "← [원래 상품명]으로 돌아가기"</div>
-        </div>
-
-      </div>
-    </div>
-
-    <!-- 바텀 시트 -->
-    <div>
-      <p class="frame-label">바텀 시트 — 맞춤 추천 (뎁스 1)</p>
-      <div class="bottom-sheet-frame">
-        <div class="bottom-sheet-handle" style="width:32px;height:4px;background:#d0d0d0;border-radius:2px;margin:8px auto 4px;"></div>
-        <div class="bottom-sheet-title">
-          함께 두면 좋은 상품
-          <div class="annotation">※ 이 시트 안 카드 탭 → 해당 상품 상세 이동 (그 안에서는 추천 섹션 미노출)</div>
-        </div>
-        <div class="scroll-cards" style="padding-bottom:16px;">
-          <div class="product-card-h">
-            <div class="img-box" style="width:120px;height:100px;border-radius:0;">이미지</div>
-            <div class="card-body">
-              <span class="badge badge-dark">● 91%</span>
-              <div style="font-size:11px;color:#555;margin-top:4px;margin-bottom:2px;">우드 커피 테이블</div>
-              <div style="font-size:12px;font-weight:700;">78,000원</div>
-            </div>
-          </div>
-          <div class="product-card-h">
-            <div class="img-box" style="width:120px;height:100px;border-radius:0;">이미지</div>
-            <div class="card-body">
-              <span class="badge badge-dark">● 85%</span>
-              <div style="font-size:11px;color:#555;margin-top:4px;margin-bottom:2px;">패브릭 쿠션 2P</div>
-              <div style="font-size:12px;font-weight:700;">24,000원</div>
-            </div>
-          </div>
-          <div class="product-card-h">
-            <div class="img-box" style="width:120px;height:100px;border-radius:0;">이미지</div>
-            <div class="card-body">
-              <span class="badge badge-dark">● 79%</span>
-              <div style="font-size:11px;color:#555;margin-top:4px;margin-bottom:2px;">린넨 러그 (120×180)</div>
-              <div style="font-size:12px;font-weight:700;">110,000원</div>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <!-- 뎁스 2 상단 복귀 버튼 예시 -->
-      <p class="frame-label" style="margin-top:20px;">뎁스 2 진입 시 — 상단 복귀 버튼 고정</p>
-      <div class="bottom-sheet-frame" style="border-style:dashed;">
-        <div style="padding:8px 16px;background:#e8e8e8;border-bottom:1px solid #ccc;text-align:center;font-size:12px;color:#444;">
-          ← 원목 2인 소파로 돌아가기
-          <div class="annotation">※ 뎁스 2 이상 진입 시 상단 고정 노출</div>
-        </div>
-        <div style="padding:12px 16px;font-size:12px;color:#888;font-style:italic;">우드 커피 테이블 상세 화면<br>(추천 섹션 미노출)</div>
-      </div>
-    </div>
-
-  </div>
-</section>
-
-
 <!-- ════════════════════════════════════════════
-     SCREEN 3B — 상품 상세 고도화 시안
+     SCREEN 3 — 상품 상세 고도화 시안
 ═════════════════════════════════════════════ -->
-<section class="screen-section" id="s3b">
-  <h2 class="screen-section-title">Screen 3B — 상품 상세 고도화 시안</h2>
+
+<section class="screen-section" id="s3">
+  <h2 class="screen-section-title">Screen 3 — 상품 상세 고도화 시안</h2>
   <div class="frames-row">
 
     <div>
@@ -3262,14 +3154,21 @@
             <div style="font-size:22px;font-weight:900;color:#111;letter-spacing:-0.5px;">320,000원</div>
           </div>
 
-          <!-- 쿠폰 + 포인트 -->
-          <div style="display:flex;align-items:center;gap:8px;flex-wrap:wrap;">
-            <div style="display:flex;align-items:center;gap:4px;background:#fff8f0;border:1px solid #f5c842;border-radius:8px;padding:4px 8px;">
-              <span style="font-size:10px;">🎟</span>
-              <span style="font-size:10px;font-weight:700;color:#b87a00;">쿠폰 5% 추가 할인</span>
-              <span style="font-size:9px;color:#e88;font-weight:600;margin-left:2px;">다운로드 ↓</span>
+          <!-- 쿠폰 혜택가 + 쿠폰 받기 버튼 -->
+          <div style="display:flex;flex-direction:column;gap:4px;">
+            <!-- 1행: 혜택가 + 버튼 -->
+            <div style="display:flex;align-items:center;justify-content:space-between;">
+              <span style="font-size:20px;font-weight:900;color:#111;letter-spacing:-0.5px;">288,000원</span>
+              <button style="height:32px;padding:0 12px;border:1.5px solid #111;border-radius:8px;background:#fff;font-size:11px;font-weight:700;color:#111;white-space:nowrap;cursor:pointer;display:flex;align-items:center;gap:4px;flex-shrink:0;">
+                쿠폰 받기 ↓
+              </button>
             </div>
-            <div style="font-size:10px;color:#888;">구매 시 <span style="font-weight:700;color:#555;">3,200P</span> 적립</div>
+            <!-- 2행: 레이블 + 할인 금액 -->
+            <div style="display:flex;align-items:center;gap:6px;">
+              <span style="font-size:11px;color:#888;">쿠폰 할인가</span>
+              <span style="font-size:11px;color:#bbb;">·</span>
+              <span style="font-size:11px;color:#bbb;">−32,000원</span>
+            </div>
           </div>
         </div>
 
@@ -3623,7 +3522,7 @@
     <!-- 단품 탭 — 단순 리스트 -->
     <div>
       <p class="frame-label">저장 — 단품 탭 (단순 찜 목록, 공간 분류 없음)</p>
-      <div class="mobile-frame">
+      <div class="mobile-frame" style="display:flex;flex-direction:column;min-height:844px;">
         <div class="header">
           <span class="header-title">좋아요</span>
           <div style="display:flex;gap:8px;"><div class="header-icon">🔍</div><div class="header-icon">🛒</div></div>
@@ -3702,7 +3601,7 @@
     <!-- 큐레이션 탭 — 공간 칩 필터 -->
     <div>
       <p class="frame-label">저장 — 큐레이션 탭 (공간 칩 전체 선택)</p>
-      <div class="mobile-frame">
+      <div class="mobile-frame" style="display:flex;flex-direction:column;min-height:844px;">
         <div class="header"><span class="header-title">좋아요</span></div>
         <div class="tab-bar" style="display:flex;">
           <div class="tab-item" style="flex:1;text-align:center;font-size:13px;">단품 <span style="color:#aaa;">24</span></div>
@@ -3800,7 +3699,7 @@
     <!-- 큐레이션 탭 — 데스크테리어 칩 선택 -->
     <div>
       <p class="frame-label">저장 — 큐레이션 탭 (데스크테리어 칩 선택)</p>
-      <div class="mobile-frame">
+      <div class="mobile-frame" style="display:flex;flex-direction:column;min-height:844px;">
         <div class="header"><span class="header-title">좋아요</span></div>
         <div class="tab-bar" style="display:flex;">
           <div class="tab-item" style="flex:1;text-align:center;font-size:13px;">단품 <span style="color:#aaa;">24</span></div>
@@ -3858,7 +3757,7 @@
     <!-- 유저 콘텐츠 탭 — 공간 칩 전체 -->
     <div>
       <p class="frame-label">저장 — 유저 콘텐츠 탭 (전체)</p>
-      <div class="mobile-frame">
+      <div class="mobile-frame" style="display:flex;flex-direction:column;min-height:844px;">
         <div class="header"><span class="header-title">좋아요</span></div>
         <div class="tab-bar" style="display:flex;">
           <div class="tab-item" style="flex:1;text-align:center;font-size:13px;">단품 <span style="color:#aaa;">24</span></div>
@@ -3968,7 +3867,7 @@
     <!-- 메인 프레임 -->
     <div>
       <p class="frame-label">마이페이지 메인</p>
-      <div class="mobile-frame">
+      <div class="mobile-frame" style="display:flex;flex-direction:column;min-height:844px;">
         <div class="header"><span class="header-title">마이페이지</span></div>
 
         <!-- 프로필 -->
@@ -4157,6 +4056,8 @@
   </div>
 </section>
 
+
+
 <!-- ════════════════════════════════════════════
      DEPRECATED — 구버전 UI 아카이브
 ═════════════════════════════════════════════ -->
@@ -4168,6 +4069,139 @@
     아래 화면들은 현재 설계 방향과 맞지 않아 폐기됐으나, 구조·인터랙션 레퍼런스로 활용 가능합니다.
   </p>
   <div class="frames-row">
+
+    <!-- ── 구버전: 상품 상세 뎁스 1 (추천 진입 전) ── -->
+    <div style="opacity:0.75;">
+      <!-- 메인 프레임 -->
+    <div>
+      <p class="frame-label" style="color:#bbb;">[구버전] 상품 상세 (뎁스 1 — 추천 진입 전)<br><span style="font-size:10px;">→ Screen 3 고도화 시안으로 대체됨</span></p>
+      <div class="mobile-frame" style="display:flex;flex-direction:column;min-height:844px;border-color:#ddd;">
+
+        <!-- 헤더 -->
+        <div class="header">
+          <span class="header-back">← 뒤로가기</span>
+          <span style="font-size:13px;font-weight:600;">원목 2인 소파</span>
+          <div class="header-icon">⋯</div>
+        </div>
+
+        <!-- 이미지 영역 -->
+        <div class="img-box" style="width:100%;height:220px;border-radius:0;">이미지</div>
+        <div style="display:flex;justify-content:center;gap:4px;padding:8px 0;">
+          <span style="font-size:18px;color:#bbb;">○</span>
+          <span style="font-size:18px;color:#bbb;">○</span>
+          <span style="font-size:18px;color:#555;">●</span>
+          <span style="font-size:18px;color:#bbb;">○</span>
+        </div>
+
+        <!-- 상품 정보 -->
+        <div style="padding:8px 16px 12px;border-bottom:1px solid #f0f0f0;">
+          <div style="font-size:16px;font-weight:700;margin-bottom:4px;">원목 2인 소파</div>
+          <div style="font-size:18px;font-weight:700;">320,000원</div>
+        </div>
+
+        <!-- 내 공간 어울림 카드 -->
+        <div class="fit-card">
+          <div style="font-size:12px;font-weight:700;margin-bottom:8px;">내 공간과 어울림</div>
+          <div style="display:flex;align-items:center;gap:8px;margin-bottom:8px;">
+            <div style="font-size:11px;color:#777;width:60px;">내 공간</div>
+            <span class="color-chip chip-1"></span>
+            <span class="color-chip chip-2"></span>
+            <span class="color-chip chip-3"></span>
+          </div>
+          <div style="display:flex;align-items:center;gap:8px;margin-bottom:8px;">
+            <div style="font-size:11px;color:#777;width:60px;">이 제품</div>
+            <span class="color-chip chip-2"></span>
+            <span class="color-chip chip-3"></span>
+          </div>
+          <div style="font-size:11px;color:#666;margin-bottom:4px;">어울림 84%</div>
+          <div class="gauge-bar"><div class="gauge-fill" style="width:84%;"></div></div>
+          <div style="font-size:11px;color:#888;margin-top:8px;">따뜻한 우드 톤이 벽지 색상과 잘 어울려요.</div>
+          <div class="annotation">※ 공간 미입력 시 카드 전체 미노출</div>
+        </div>
+
+        <!-- 색상/사이즈 -->
+        <div style="padding:8px 16px;border-bottom:1px solid #f0f0f0;">
+          <div style="font-size:12px;font-weight:600;margin-bottom:8px;">색상 / 사이즈</div>
+          <div style="display:flex;align-items:center;gap:8px;margin-bottom:8px;">
+            <span style="font-size:11px;color:#777;">색상</span>
+            <select style="font-size:11px;padding:4px 8px;border:1px solid #ccc;border-radius:4px;background:#fff;color:#333;">
+              <option>내추럴 우드</option>
+            </select>
+          </div>
+          <div style="font-size:11px;color:#666;margin-bottom:8px;">W 1400 × D 800 × H 750 mm</div>
+          <span style="font-size:11px;color:#888;text-decoration:underline;cursor:pointer;">📏 사이즈 재는 법 보기 →</span>
+        </div>
+
+        <!-- 추천 이유 -->
+        <div style="padding:12px 16px;border-bottom:1px solid #f0f0f0;">
+          <div style="font-size:12px;font-weight:600;margin-bottom:8px;">이 조합을 추천하는 이유</div>
+          <div style="font-size:12px;color:#666;line-height:1.6;">베이지 벽지와 원목 프레임이 따뜻한 자연감을 만들어냅니다. 패브릭 소재로 계절감 있는 연출이 가능해요.</div>
+        </div>
+
+        <!-- CTA -->
+        <div style="display:flex;gap:8px;padding:12px 16px;">
+          <button class="btn" style="flex:1;">🤍 찜하기</button>
+          <button class="btn btn-primary" style="flex:2;">장바구니 담기</button>
+        </div>
+
+        <!-- 맞춤 추천 진입점 -->
+        <div style="padding:0 16px 16px;">
+          <div style="font-size:12px;font-weight:600;margin-bottom:8px;">이 상품과 어울리는 추천</div>
+          <button class="btn btn-full">추천 상품 보기 ↓</button>
+          <div class="annotation">※ 탭 시 바텀 시트로 열림 — 풀페이지 이동 없음<br>※ 래빗홀 방지: 추천 뎁스 1단계 제한<br>※ 뎁스 2 진입 시 상단 고정 버튼 노출: "← [원래 상품명]으로 돌아가기"</div>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- 바텀 시트 -->
+    <div>
+      <p class="frame-label">바텀 시트 — 맞춤 추천 (뎁스 1)</p>
+      <div class="bottom-sheet-frame">
+        <div class="bottom-sheet-handle" style="width:32px;height:4px;background:#d0d0d0;border-radius:2px;margin:8px auto 4px;"></div>
+        <div class="bottom-sheet-title">
+          함께 두면 좋은 상품
+          <div class="annotation">※ 이 시트 안 카드 탭 → 해당 상품 상세 이동 (그 안에서는 추천 섹션 미노출)</div>
+        </div>
+        <div class="scroll-cards" style="padding-bottom:16px;">
+          <div class="product-card-h">
+            <div class="img-box" style="width:120px;height:100px;border-radius:0;">이미지</div>
+            <div class="card-body">
+              <span class="badge badge-dark">● 91%</span>
+              <div style="font-size:11px;color:#555;margin-top:4px;margin-bottom:2px;">우드 커피 테이블</div>
+              <div style="font-size:12px;font-weight:700;">78,000원</div>
+            </div>
+          </div>
+          <div class="product-card-h">
+            <div class="img-box" style="width:120px;height:100px;border-radius:0;">이미지</div>
+            <div class="card-body">
+              <span class="badge badge-dark">● 85%</span>
+              <div style="font-size:11px;color:#555;margin-top:4px;margin-bottom:2px;">패브릭 쿠션 2P</div>
+              <div style="font-size:12px;font-weight:700;">24,000원</div>
+            </div>
+          </div>
+          <div class="product-card-h">
+            <div class="img-box" style="width:120px;height:100px;border-radius:0;">이미지</div>
+            <div class="card-body">
+              <span class="badge badge-dark">● 79%</span>
+              <div style="font-size:11px;color:#555;margin-top:4px;margin-bottom:2px;">린넨 러그 (120×180)</div>
+              <div style="font-size:12px;font-weight:700;">110,000원</div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- 뎁스 2 상단 복귀 버튼 예시 -->
+      <p class="frame-label" style="margin-top:20px;">뎁스 2 진입 시 — 상단 복귀 버튼 고정</p>
+      <div class="bottom-sheet-frame" style="border-style:dashed;">
+        <div style="padding:8px 16px;background:#e8e8e8;border-bottom:1px solid #ccc;text-align:center;font-size:12px;color:#444;">
+          ← 원목 2인 소파로 돌아가기
+          <div class="annotation">※ 뎁스 2 이상 진입 시 상단 고정 노출</div>
+        </div>
+        <div style="padding:12px 16px;font-size:12px;color:#888;font-style:italic;">우드 커피 테이블 상세 화면<br>(추천 섹션 미노출)</div>
+      </div>
+    </div>
+    </div>
 
     <!-- ── 구버전: 집들이 콘텐츠 상세 ── -->
     <div>
